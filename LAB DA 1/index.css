@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: beige;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  background-color: white;
+  width: 100%;
+}
+
+.logo img {
+  float: left;
+  padding-left: 5%;
+  padding-top: 1%;
+  width: 40vh;
+}
+.myinfo {
+  float: right;
+  height: 100%;
+  margin: 5vh;
+  font-size: 1.5rem;
+}
+.middle {
+  width: 100%;
+  height: 72.2vh;
+}
+.menu {
+  float: left;
+  width: 35%;
+  height: 100%;
+  background-color: rgb(109, 210, 205);
+}
+.menu ul {
+  margin: 10%;
+}
+ul li {
+  list-style-type: none;
+  height: 10vh;
+  text-align: center;
+}
+a:hover {
+  cursor: pointer;
+  color: blue;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 5vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.vtop {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgreen;
+}
+.vb {
+  height: 20vh;
+  width: 30vh;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: gray;
+  border-radius: 5%;
+  background-color: white;
+}
+.vb img {
+  width: 30%;
+  height: 30%;
+  position: relative;
+  top: 40%;
+  left: 5%;
+}
+.btn {
+  height: 25%;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  border-radius: 1vh;
+  position: relative;
+  top: 30%;
+  left: 20%;
+  background-color: rgb(44, 102, 190);
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(12, 36, 71);
+  color: white;
+}
+#info h1 {
+  text-align: center;
+}
+#info {
+  width: 100%;
+  height: 100%;
+}
