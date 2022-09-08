@@ -4,18 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIMETABLE</title>
+    <title>TimeTable</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
+      body {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
       }
-      img {
-        height: 100vh;
+
+      table {
+        border-collapse: collapse;
+        background-color: rgb(93, 208, 220);
+        margin: 1% auto 3%;
+        border: 2px solid black;
+        font-size: 1.1rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .afterbreak {
+        background-color: rgb(199, 156, 239);
+      }
+
+      a {
+        padding: 1%;
+        background-color: black;
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+      .subject {
+        background-color: greenyellow;
       }
     </style>
   </head>
+
   <body>
-    <img src="SEM 5 TT.png" alt="TIMETABLE" width="100%" />
+    <h1>TIMETABLE</h1>
+    <table border="1" cellpadding="5.5rem">
+      <thead>
+        <tr>
+          <td>Day</td>
+          <td>8:00 - 9:00</td>
+          <td>9:00 - 10:00</td>
+          <td>10:00 - 11:00</td>
+          <td>11:00 - 12:00</td>
+          <td>12:00 - 1:00</td>
+          <td class="afterbreak">Break</td>
+          <td>2:00 - 3:00</td>
+          <td>3:00 - 4:00</td>
+          <td>4:00 - 5:00</td>
+          <td>5:00 - 6:00</td>
+          <td>6:00 - 7:00</td>
+          <td>7:00 - 7:30</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>A1</td>
+          <td>F1</td>
+          <td class="subject">D1-STS3201-SS-SJT315-ALL</td>
+          <td>TB1</td>
+          <td>TG1</td>
+          <td class="afterbreak"></td>
+          <td>A2</td>
+          <td class="subject">F2-CSE3501-ETH-SJT211-ALL</td>
+          <td class="subject">D2-CSE2006-ETH-SJT604-ALL</td>
+          <td>TB2</td>
+          <td class="subject">L35-CSE3002-ELA-SJT416-ALL</td>
+          <td class="subject">L36-CSE3002-ELA-SJT416-ALL</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td class="subject">B1-CSE3002-ETH-SJT208-ALL</td>
+          <td>G1</td>
+          <td>E1</td>
+          <td>TC1</td>
+          <td>TAA1</td>
+          <td class="afterbreak"></td>
+          <td class="subject">B2-CSE3001-ETH-SJT311-ALL</td>
+          <td>G2</td>
+          <td class="subject">E2-CSE4015-ETH-SJT404-ALL</td>
+          <td>TC2</td>
+          <td>TAA2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td class="subject">L13-CSE3001-ELA-SJT417-ALL</td>
+          <td class="subject">L14-CSE3001-ELA-SJT417-ALL</td>
+          <td>F1</td>
+          <td>V1</td>
+          <td>V2</td>
+          <td class="afterbreak"></td>
+          <td>C2</td>
+          <td>A2</td>
+          <td class="subject">F2-CSE3501-ETH-SJT211-ALL</td>
+          <td class="subject">TD2-PHY1901-TH-SJT513-ALL</td>
+          <td>TBB2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td class="subject">D1-STS3201-SS-SJT315-ALL</td>
+          <td class="subject">B1-CSE3002-ETH-SJT208-ALL</td>
+          <td class="subject">L21-CSE3501-ELA-SJT418-ALL</td>
+          <td class="subject">L22-CSE3501-ELA-SJT418-ALL</td>
+          <td>TCC1</td>
+          <td class="afterbreak"></td>
+          <td class="subject">D2-CSE2006-ETH-SJT604-ALL</td>
+          <td class="subject">B2-CSE3001-ETH-SJT311-ALL</td>
+          <td>G2</td>
+          <td class="subject">TE2-CSE4015-ETH-SJT404-ALL</td>
+          <td>TCC2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>E1</td>
+          <td>C1</td>
+          <td class="subject">L27-CSE2006-ELA-SJT515-ALL</td>
+          <td class="subject">L28-CSE2006-ELA-SJT515-ALL</td>
+          <td class="subject">TD1-STS3201-SS-SJT315-ALL</td>
+          <td class="afterbreak"></td>
+          <td class="subject">E2-CSE4015-ETH-SJT404-ALL</td>
+          <td>C2</td>
+          <td>TA2</td>
+          <td>TF2</td>
+          <td>TDD2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="afterbreak"></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="afterbreak"></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="index.html">Home Page</a>
   </body>
 </html>
